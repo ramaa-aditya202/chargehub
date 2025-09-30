@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak | ChargeHub - Hubungi Kami</title>
+    <link rel="icon" href="./src/img/nyan.ico">
+    <link href="./src/css/main.css" rel="stylesheet">
+    <link href="./src/css/contact.css" rel="stylesheet">
+    <link href="./src/fonts/poppins.css" rel="stylesheet">
+    <link href="./src/icons/fontawesome.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Navigation -->
+        <header id="header" class="header">
+            <div class="nav-container">
+                <a href="./index.html" class="logo">
+                    <img src="./src/img/nyan.ico" alt="ChargeHub Logo" class="logo-img">
+                </a>
+                <nav class="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="./index.html" class="nav-link">Beranda</a></li>
+                        <li><a href="./products.html" class="nav-link">Produk</a></li>
+                        <li><a href="./about.html" class="nav-link">Tentang</a></li>
+                        <li><a href="./contact.html" class="nav-link active">Kontak</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-actions">
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                    <button class="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Header -->
+        <section class="contact-hero">
+            <div class="hero-content">
+                <h1>Hubungi Kami</h1>
+                <p class="hero-subtitle">
+                    Tim customer service ChargeHub siap membantu Anda 24/7
+                </p>
+            </div>
+        </section>
+
+        <!-- Quick Contact Options -->
+        <section class="quick-contact">
+            <div class="quick-contact-grid">
+                <div class="contact-option">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3>WhatsApp</h3>
+                        <p>Respon cepat dalam hitungan menit</p>
+                        <a href="https://wa.me/6281234567890" class="contact-link">+62 812 3456 7890</a>
+                    </div>
+                </div>
+                <div class="contact-option">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Telepon</h3>
+                        <p>Layanan 24 jam setiap hari</p>
+                        <a href="tel:+622112345678" class="contact-link">+62 21 1234 5678</a>
+                    </div>
+                </div>
+                <div class="contact-option">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Email</h3>
+                        <p>Respon dalam 24 jam</p>
+                        <a href="mailto:info@chargehub.co.id" class="contact-link">info@chargehub.co.id</a>
+                    </div>
+                </div>
+                <div class="contact-option">
+                    <div class="contact-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Live Chat</h3>
+                        <p>Chat langsung dengan tim kami</p>
+                        <button class="contact-link live-chat-btn">Mulai Chat</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form & Info -->
+        <section class="contact-main">
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Kirim Pesan</h2>
+                    <p>Ada pertanyaan atau butuh bantuan? Kirim pesan dan kami akan segera merespon.</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Nama Depan*</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Nama Belakang</label>
+                                <input type="text" id="lastName" name="lastName">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Nomor Telepon</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subjek*</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Pilih Kategori</option>
+                                <option value="produk">Pertanyaan Produk</option>
+                                <option value="pemesanan">Bantuan Pemesanan</option>
+                                <option value="pengiriman">Status Pengiriman</option>
+                                <option value="garansi">Klaim Garansi</option>
+                                <option value="teknis">Dukungan Teknis</option>
+                                <option value="refund">Pengembalian & Refund</option>
+                                <option value="kerjasama">Kerjasama Bisnis</option>
+                                <option value="lainnya">Lainnya</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Pesan*</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Jelaskan pertanyaan atau kendala yang Anda alami..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Saya ingin menerima update produk dan promosi menarik
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <h2>Informasi Kontak</h2>
+                    
+                    <div class="info-card">
+                        <div class="info-header">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Alamat Toko</h3>
+                        </div>
+                        <div class="info-content">
+                            <p><strong>ChargeHub Store Jakarta</strong></p>
+                            <p>Jl. Teknologi Raya No. 123</p>
+                            <p>Jakarta Selatan, DKI Jakarta 12345</p>
+                            <p>Indonesia</p>
+                        </div>
+                        <div class="map-placeholder">
+                            [Google Maps Placeholder]
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-header">
+                            <i class="fas fa-clock"></i>
+                            <h3>Jam Operasional</h3>
+                        </div>
+                        <div class="info-content">
+                            <div class="schedule-item">
+                                <span>Senin - Jumat</span>
+                                <span>09:00 - 21:00</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span>Sabtu</span>
+                                <span>09:00 - 18:00</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span>Minggu</span>
+                                <span>10:00 - 16:00</span>
+                            </div>
+                            <div class="schedule-note">
+                                <p><strong>Customer Service Online:</strong> 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-header">
+                            <i class="fas fa-headset"></i>
+                            <h3>Customer Service</h3>
+                        </div>
+                        <div class="info-content">
+                            <div class="cs-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <p><strong>Hotline:</strong> +62 21 1234 5678</p>
+                                    <small>Bebas pulsa dari seluruh Indonesia</small>
+                                </div>
+                            </div>
+                            <div class="cs-item">
+                                <i class="fab fa-whatsapp"></i>
+                                <div>
+                                    <p><strong>WhatsApp:</strong> +62 812 3456 7890</p>
+                                    <small>Chat dengan tim support kami</small>
+                                </div>
+                            </div>
+                            <div class="cs-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <p><strong>Email:</strong> info@chargehub.co.id</p>
+                                    <small>Untuk pertanyaan umum</small>
+                                </div>
+                            </div>
+                            <div class="cs-item">
+                                <i class="fas fa-tools"></i>
+                                <div>
+                                    <p><strong>Technical Support:</strong> tech@chargehub.co.id</p>
+                                    <small>Untuk dukungan teknis produk</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-media-card">
+                        <h3>Ikuti Kami</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>@chargehub.id</span>
+                            </a>
+                            <a href="#" class="social-link facebook">
+                                <i class="fab fa-facebook"></i>
+                                <span>ChargeHub Indonesia</span>
+                            </a>
+                            <a href="#" class="social-link twitter">
+                                <i class="fab fa-twitter"></i>
+                                <span>@chargehub_id</span>
+                            </a>
+                            <a href="#" class="social-link youtube">
+                                <i class="fab fa-youtube"></i>
+                                <span>ChargeHub Official</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="faq-header">
+                <h2>Pertanyaan yang Sering Diajukan</h2>
+                <p>Temukan jawaban untuk pertanyaan umum tentang produk dan layanan kami</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Apakah semua produk ChargeHub bergaransi?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ya, semua produk ChargeHub dilengkapi dengan garansi resmi. Garansi produk original dari brand ternama seperti iPhone, Samsung berkisar 1-2 tahun, sedangkan produk universal kami memberikan garansi 1 tahun dengan layanan after-sales terpercaya.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Berapa lama waktu pengiriman ke seluruh Indonesia?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Untuk Jakarta dan sekitarnya, kami menyediakan same-day delivery. Kota-kota besar seperti Surabaya, Bandung, Medan membutuhkan 1-2 hari kerja. Sedangkan untuk kota lainnya, pengiriman membutuhkan 2-4 hari kerja tergantung lokasi.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Bagaimana cara mengklaim garansi produk?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Untuk klaim garansi, Anda dapat menghubungi customer service kami melalui WhatsApp, email, atau datang langsung ke toko. Pastikan menyimpan bukti pembelian dan kemasan produk. Tim kami akan membantu proses klaim garansi dengan cepat dan mudah.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Apakah bisa tukar atau kembalikan produk jika tidak sesuai?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ya, kami menerima tukar atau pengembalian produk dalam 7 hari setelah pembelian dengan syarat produk dalam kondisi baru, kemasan utuh, dan disertai bukti pembelian. Untuk detail kebijakan return, silakan hubungi customer service kami.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Bagaimana memastikan charger yang dibeli compatible dengan HP saya?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Setiap produk di website kami sudah dilengkapi dengan informasi kompatibilitas lengkap. Jika masih ragu, Anda dapat konsultasi gratis dengan tim technical support kami melalui chat atau telepon. Kami akan membantu memilih charger yang tepat untuk device Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Tautan</h4>
+                    <ul>
+                        <li><a href="./index.html">Beranda</a></li>
+                        <li><a href="./products.html">Produk</a></li>
+                        <li><a href="./about.html">Tentang Kami</a></li>
+                        <li><a href="./contact.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                        <li><a href="#">Garansi Produk</a></li>
+                        <li><a href="#">Panduan Belanja</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Hubungi Kami</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Jl. Teknologi No. 123, Jakarta Selatan</p>
+                        <p><i class="fas fa-phone"></i> +62 21 1234 5678</p>
+                        <p><i class="fas fa-envelope"></i> info@chargehub.co.id</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ChargeHub. Semua Hak Dilindungi.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h3>Pesan Terkirim!</h3>
+            </div>
+            <div class="modal-body">
+                <p>Terima kasih atas pesan Anda. Tim customer service kami akan merespon dalam 24 jam.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="closeModal()">OK</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
